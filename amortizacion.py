@@ -74,7 +74,9 @@ Elige un periodo de tiempo:
         
         formula_r_cuota = valor_presente / ((1 - (1 + tasa_interes)** - periodos_tiempo) / tasa_interes)
 
-        print(f"Valor de la Cuota: {convertir_a_dolares(formula_r_cuota)} y con una tasa del {tasa_interes}% {tiempo_tasa}")
+        tasa_interes_porcentaje = tasa_interes * 100
+
+        print(f"Valor de la Cuota: {convertir_a_dolares(formula_r_cuota)} y con una tasa del {tasa_interes_porcentaje}% {tiempo_tasa}")
 
         #Tabla
         deuda = valor_presente
